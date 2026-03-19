@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  --primary-color: #3a86ff; /* blue */
+  --secondary-color: #20c997; /* teal */
+  --accent-color: #ffc107; /* soft yellow */
+  --text-color: #212529; /* dark */
+  --background-color: #f8f9fa; /* light */
+  --color: #ffffff; /* white */
+  --nav-link-color: #e9f2ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+  padding: 12px 12px 12px 0;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Navbar styles  starts */
+
+.custom-navbar {
+  background-color: var(--primary-color);
+}
+
+.logo {
+  object-fit: cover;
+  width: 200px;
+}
+
+.navbar-toggler {
+  margin-bottom: 24px;
+}
+
+.nav-items-container {
+  margin-bottom: 24px;
+  margin-right: 12px;
+  flex-grow: 0;
+  gap: 48px;
+  padding: 24px;
+}
+
+/* Navbar styles styles ends */
+
+/* Hero section styles starts */
+.hero-section {
+  margin: 32px 0;
+}
+
+.service-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-section-info {
+  margin: 48px 0;
+  padding: 24px 0;
+}
+/* Hero section styles ends */
+
+/* Services section styles starts */
+.services {
+  margin: 32px 0;
+}
+
+.grid-container {
+  padding: 0;
+}
+
+.grid-service-cards-container {
+  margin: 24px 0;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.view-service-btn-wrapper {
+  text-align: center;
+  margin: 12px;
+}
+
+/* services section styles ends */
+
+/* testimonials section styles starts */
+.testimonials {
+  margin: 32px 0;
+}
+.testimonial-image {
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 12px 0;
+}
+/* testimonials section styles ends */
+
+/* footer section styles starts */
+
+footer {
+  background-color: var(--primary-color);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 24px;
+  text-align: center;
+}
+
+.nav-link {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+/* footer section styles ends */
+
+@media (min-width: 576px) {
+  .logo {
+    margin-left: 24px;
+  }
+  .navbar-toggler {
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .hero-section-info {
+    margin: 16px 0;
+  }
+
+  .service-img-container {
+    padding: 0;
+  }
+
+  .service-img {
+    height: 250px;
+    width: 340px;
+    margin: 16px 0;
+  }
+
+  .services {
+    text-align: center;
+  }
+
+  .card-container {
+    margin-top: 24px;
+  }
+
+  .testimony-card-3 {
+    margin-top: 32px;
+    margin-left: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-img {
+    height: 200px;
+    width: 280px;
+  }
+
+  .grid-service-cards-container {
+    margin: 0px 24px;
+  }
+
+  .testimony-card-3 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    padding: 0;
+  }
+}
