@@ -15,69 +15,70 @@
   <body>
     <header>
       <!-- Navbar starts-->
-      <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img class="logo" src="./assets/images/SLS-logo.png" alt=""
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"
+            ><img
+              class="img-fluid sparkle-clean-services-logo"
+              src="./assets/images/SLS-logo.png"
+              alt="Sparkle Clean Services logo"
           /></a>
+
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-target="#nav-menu"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="collapse navbar-collapse nav-items-container"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <div class="collapse navbar-collapse" id="nav-menu">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="./index.html">About</a>
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  href="#"
+                  >Services</a
                 >
-                  Services
-                </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Home Cleaning</a></li>
-                  <li><a class="dropdown-item" href="#">Office Cleaning</a></li>
-
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="#home-cleaning"
+                      >Home Cleaning</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#office-cleaning"
+                      >Office Cleaning</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#move-in-or-move-out-cleaning"
                       >Move-In / Move-Out Cleaning</a
                     >
                   </li>
+                  <li><a class="dropdown-item" href="#pricing">Pricing</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="./contact.html">Contact</a>
               </li>
             </ul>
-
-            <div class="text-lg-end">
-              <button
-                type="button"
-                class="btn btn-outline-light me-2 login-btn"
-              >
+            <div class="d-flex gap-2 ms-lg-3">
+              <button type="button" class="btn btn-outline-light me-2">
                 Login
               </button>
-              <button type="button" class="btn btn-warning sign-up-btn">
-                Sign-up
-              </button>
+              <button type="button" class="btn btn-warning">Sign-up</button>
             </div>
           </div>
         </div>
@@ -118,7 +119,7 @@
           <h2>Services We Offer</h2>
           <div class="row grid-service-cards-container">
             <div class="col-lg-4 col-md-6 col-sm-12 card-container">
-              <div class="card" >
+              <div class="card">
                 <img
                   src="./assets/images/home-cleaning.jpeg"
                   class="card-img-top"
@@ -139,7 +140,7 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 card-container">
-              <div class="card" >
+              <div class="card">
                 <img
                   src="./assets/images/office-cleaning.jpg"
                   class="card-img-top"
@@ -159,7 +160,7 @@
               </div>
             </div>
             <div class="col-lg-4 col-sm-12 card-container">
-              <div class="card" >
+              <div class="card">
                 <img
                   src="./assets/images/moving-in-moving-out-cleaning.jpg"
                   class="card-img-top"
