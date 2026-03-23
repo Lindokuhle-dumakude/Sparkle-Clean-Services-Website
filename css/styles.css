@@ -50,3 +50,7 @@ body {
   object-fit: cover;
   border-radius: 50%;
 }
+
+footer {
+  background-color: var(--primary-color);
+}
