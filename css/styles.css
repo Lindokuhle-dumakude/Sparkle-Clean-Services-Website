@@ -41,3 +41,12 @@ body {
 }
 
 /* navbar styles end */
+
+/* size testimonial images */
+
+.testimonial-profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+}
