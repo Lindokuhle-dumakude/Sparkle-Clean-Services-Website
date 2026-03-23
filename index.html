@@ -101,7 +101,7 @@
     <main>
       <!-- hero section starts-->
       <section class="hero-section py-5">
-        <div class="container text-md-center text-lg-start">
+        <div class="container text-center text-lg-start">
           <div class="row align-items-center justify-content-center">
             <div class="col-12 col-lg-6">
               <h1>Welcome to Sparkle Clean</h1>
@@ -133,7 +133,7 @@
       <!-- services section starts -->
       <section class="services py-5">
         <div class="container">
-          <h2>Services We Offer</h2>
+          <h2 class="text-center">Services We Offer</h2>
           <div class="row mt-2 g-4 align-items-stretch">
             <div class="col-12 col-md-6 col-lg-4">
               <div class="card h-100">
@@ -200,69 +200,59 @@
 
       <!-- testimonials section starts-->
       <section class="testimonials py-5">
-        <div class="container">
+        <div class="container text-center">
           <h2>Reviews</h2>
-          <div
-            class="text-center d-md-flex align-items-center justify-content-between py-2"
-          >
+          <div class="row g-4">
             <!-- testimonial card wrappers -->
-            <article class="my-4">
-              <img
-                class="img img-fluid testimonial-profile-img"
-                src="./assets/images/sarah-M.jpg"
-                alt="sarah M image"
-              />
-              <h3 class="mt-3">Sarah M</h3>
-              <p>“Amazing service! My house has never looked this clean.”</p>
-              <p>⭐⭐⭐⭐⭐</p>
-            </article>
-            <article class="my-4">
-              <img
-                class="img img-fluid testimonial-profile-img"
-                src="./assets/images/james-k.jpg"
-                alt="james k image"
-              />
-              <h3 class="mt-3">James K</h3>
-              <p>“Professional and on time. Highly recommend!”</p>
-              <p>⭐⭐⭐⭐⭐</p>
-            </article>
-            <article class="my-4">
-              <img
-                class="img img-fluid testimonial-profile-img"
-                src="./assets/images/Wendy-P.jpg"
-                alt="wendy p image"
-              />
-              <h3 class="mt-3">Wendy P</h3>
-              <p>"Great work! The house looked fantastic."</p>
-              <p>⭐⭐⭐⭐⭐</p>
-            </article>
+            <div class="col-12 col-md-4">
+              <article
+                class="my-4 d-flex flex-column align-items-center justify-content-center"
+              >
+                <img
+                  class="img img-fluid testimonial-profile-img"
+                  src="./assets/images/sarah-M.jpg"
+                  alt="sarah M image"
+                />
+                <h3 class="mt-3">Sarah M</h3>
+                <p>“Amazing service! My house has never looked this clean.”</p>
+                <p>⭐⭐⭐⭐⭐</p>
+              </article>
+            </div>
+            <div class="col-12 col-md-4">
+              <article class="my-4">
+                <img
+                  class="img img-fluid testimonial-profile-img"
+                  src="./assets/images/james-k.jpg"
+                  alt="james k image"
+                />
+                <h3 class="mt-3">James K</h3>
+                <p>“Professional and on time. Highly recommend!”</p>
+                <p>⭐⭐⭐⭐⭐</p>
+              </article>
+            </div>
+            <div class="col-12 col-md-4">
+              <article class="my-4">
+                <img
+                  class="img img-fluid testimonial-profile-img"
+                  src="./assets/images/Wendy-P.jpg"
+                  alt="wendy p image"
+                />
+                <h3 class="mt-3">Wendy P</h3>
+                <p>"Great work! The house looked fantastic."</p>
+                <p>⭐⭐⭐⭐⭐</p>
+              </article>
+            </div>
           </div>
         </div>
       </section>
       <!-- testimonials section ends-->
-    </main>
 
-    <footer class="py-5">
-      <div class="container">
-        <h3>Quick Links</h3>
-        <div class="d-md-flex">
-          <nav class="navbar">
-            <ul class="navbar-nav d-flex flex-column justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link active" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="py-3 ms-auto">
+      <!-- newsletter section starts -->
+      <section class="newsletter bg-body-secondary py-5">
+        <div class="container text-center">
+          <div
+            class="py-3 d-md-flex flex-column justify-content-center align-items-center"
+          >
             <form>
               <h5>Subscribe to our newsletter</h5>
               <p>Monthly digest of what's new and exciting from us.</p>
@@ -281,6 +271,12 @@
             </form>
           </div>
         </div>
+      </section>
+      <!-- newsletter section ends -->
+    </main>
+
+    <footer class="py-5">
+      <div class="container">
         <small class="d-flex align-items-center justify-content-center mt-4">
           &copy; Copyright 2026 Sparkle Clean Services. | All Rights Reserved.
         </small>
@@ -314,7 +310,7 @@
             <form>
               <div class="mb-3">
                 <label
-                  for="email-address"
+                  for="login-email"
                   name="email-address"
                   class="col-form-label"
                 >
@@ -323,19 +319,23 @@
                 <input
                   type="email"
                   class="form-control"
-                  id="email-address"
+                  id="login-email"
                   placeholder="Please enter Email"
                   required
                 />
               </div>
               <div class="mb-3">
-                <label for="password" name="password" class="col-form-label">
+                <label
+                  for="login-password"
+                  name="password"
+                  class="col-form-label"
+                >
                   Password:
                 </label>
                 <input
                   type="password"
                   class="form-control"
-                  id="password"
+                  id="login-password"
                   placeholder="Please enter Password"
                   required
                 />
@@ -352,7 +352,7 @@
             >
               Cancel
             </button>
-            <button type="button" class="btn btn-primary btn-lg mx-2 mx-md-4">
+            <button type="type" class="btn btn-primary btn-lg mx-2 mx-md-4">
               Login
             </button>
           </div>
@@ -474,7 +474,7 @@
             >
               Cancel
             </button>
-            <button type="button" class="btn btn-warning btn-lg mx-2 mx-md-4">
+            <button type="submit" class="btn btn-warning btn-lg mx-2 mx-md-4">
               Submit
             </button>
           </div>
