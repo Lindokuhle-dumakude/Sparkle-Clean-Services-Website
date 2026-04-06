@@ -59,7 +59,7 @@ footer {
   background-color: var(--primary-color);
 }
 
-.contact-form {
+.contact-form, .booking-form {
   margin: auto;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -73,7 +73,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .contact-form {
+  .contact-form, .booking-form {
     max-width: 600px;
   }
 }
