@@ -104,6 +104,127 @@
       <!-- Navbar ends-->
     </header>
 
+    <main>
+      <section class="hero py-5">
+        <div class="container">
+          <div class="text-center">
+            <h1>Book a Cleaning</h1>
+            <p class="lead">
+              Fill in the form below and we'll confirm your booking within 24
+              hours.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking my-3">
+        <form class="my-3">
+          <fieldset class="booking-form">
+            <legend>Please Fill In Form:</legend>
+            <div class="mb-3">
+              <label for="booking-full-name" class="col-form-label">
+                Full Name:
+              </label>
+              <input
+                type="text"
+                name="booking-full-name"
+                class="form-control"
+                id="booking-full-name"
+                placeholder="Please enter Full Name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="booking-email-address" class="col-form-label">
+                Email Address:
+              </label>
+              <input
+                type="email"
+                name="booking-email-address"
+                class="form-control"
+                id="booking-email-address"
+                placeholder="Please enter Email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="booking-phone-number" class="col-form-label">
+                Phone Number:
+              </label>
+              <input
+                type="tel"
+                name="booking-phone-number"
+                class="form-control"
+                id="booking-phone-number"
+                placeholder="Please enter Phone Number"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="booking-service-type" class="col-form-label">
+                Service Type:
+              </label>
+              <select
+                name="booking-service-type"
+                id="booking-service-type"
+                class="form-select"
+                required
+              >
+                <option value="" selected disabled>Choose a service</option>
+                <option value="home-cleaning">Home Cleaning</option>
+                <option value="office-cleaning">Office Cleaning</option>
+                <option value="move-in-move-out-cleaning">
+                  Move-In / Move-Out Cleaning
+                </option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="preferred-date" class="col-form-label">
+                Preferred Date:
+              </label>
+              <input
+                type="date"
+                name="preferred-date"
+                class="form-control"
+                id="preferred-date"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="preferred-time" class="col-form-label">
+                Preferred Time:
+              </label>
+              <input
+                type="time"
+                name="preferred-time"
+                class="form-control"
+                id="preferred-time"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="special-instructions" class="col-form-label">
+                Special Instructions <i>(Optional)</i>:
+              </label>
+              <textarea
+                name="special-instructions"
+                id="special-instructions"
+                class="form-control"
+              ></textarea>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+              <button type="submit" class="btn btn-warning">Book Now</button>
+            </div>
+          </fieldset>
+        </form>
+        <p class="text-center">
+          Need help choosing a service? Check our
+          <a href="./price.html">Pricing page</a> or
+          <a href="./contact.html">Contact us</a>.
+        </p>
+      </section>
+    </main>
+
     <footer class="py-5">
       <div class="container">
         <small class="d-flex align-items-center justify-content-center mt-4">
