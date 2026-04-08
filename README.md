@@ -3,7 +3,7 @@
 Sparkle Clean Services is a local cleaning service web app designed to help local citizens
 find suitable cleaning services for their homes and offices.
 
-**Live Demo:** [View Site](#)
+**Live Demo:** [View Site](https://lindokuhle-dumakude.github.io/Sparkle-Clean-Services-Website/)
 
 ---
 
@@ -36,6 +36,8 @@ find suitable cleaning services for their homes and offices.
 - Pricing
 - Contact
 - Booking
+
+---
 
 ## Getting Started
 
